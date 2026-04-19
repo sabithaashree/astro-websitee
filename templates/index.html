@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rajalakshmi Astro Guru</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+<div class="astro-bg">
+  <span>✦</span>
+  <span>✧</span>
+  <span>🔮</span>
+  <span>✨</span>
+  <span>♈</span>
+  <span>♉</span>
+  <span>♊</span>
+  <span>♋</span>
+</div>
+<!-- NAVBAR -->
+<nav class="navbar">
+<div class="logo-section">
+<img src="{{ url_for('static', filename='logo.png') }}" class="logo">
+<h2>Rajalakshmi Astro Guru</h2>
+</div>
+
+<a href="#booking" class="gold-btn small">Book Now</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+
+<img src="{{ url_for('static', filename='logo.png') }}" class="hero-logo">
+
+<h1 class="title">Unlock Your Destiny</h1>
+
+<p>Marriage • Health • Vaasthu • Tarot • Vedic</p>
+
+<a href="#booking">
+<button class="gold-btn">Book Consultation</button>
+</a>
+
+
+</section>
+
+<section class="concept">
+<h2>What Makes My Astrology Unique?</h2>
+
+<p>
+My astrology approach is focused on real-life guidance, not just predictions.
+I combine traditional Vedic astrology with practical understanding to give clear,
+simple and useful insights for your daily life.
+</p>
+
+<div class="concept-grid">
+
+<div>
+<h3>🔍 Clear Predictions</h3>
+<p>I provide direct answers about marriage, career, and health without confusion.</p>
+</div>
+
+<div>
+<h3>⏰ Right Timing</h3>
+<p>Know when important events are likely to happen in your life.</p>
+</div>
+
+<div>
+<h3>🎯 Practical Solutions</h3>
+<p>Simple remedies and guidance that you can actually follow.</p>
+</div>
+
+<div>
+<h3>💬 Easy to Understand</h3>
+<p>No complicated astrology terms — everything explained clearly.</p>
+</div>
+
+</div>
+</section>
+
+<section class="concept">
+<h2>My Astrology Approach</h2>
+
+<p class="concept-sub">
+I provide practical, life-focused astrology guidance that helps you make real decisions with clarity and confidence.
+</p>
+
+<div class="concept-grid">
+
+<div class="concept-card">
+<h3>🔍 Accurate Life Predictions</h3>
+<p>Clear insights into marriage, career, health, and future life events.</p>
+</div>
+
+<div class="concept-card">
+<h3>⏰ Right Time Guidance</h3>
+<p>Understand the correct timing for major decisions and opportunities.</p>
+</div>
+
+<div class="concept-card">
+<h3>🎯 Practical Solutions</h3>
+<p>Simple remedies and guidance that you can actually follow in real life.</p>
+</div>
+
+<div class="concept-card">
+<h3>💬 Easy Explanation</h3>
+<p>No complicated astrology terms — everything is explained clearly.</p>
+</div>
+
+</div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" data-aos="fade-up">
+<h2>Our Expertise</h2>
+
+<div class="grid">
+<div class="card">
+<h3>💍 Marriage Guidance</h3>
+<p>Marriage timing, compatibility analysis, and relationship clarity.</p>
+<p><strong>Duration:</strong> 45 mins</p>
+</div>
+
+<div class="card">
+<h3>🧘 Health Astrology</h3>
+<p>Health predictions and preventive guidance based on astrology.</p>
+<p><strong>Duration:</strong> 30 mins</p>
+</div>
+
+<div class="card">
+<h3>🏠 Vaasthu Consultation</h3>
+<p>Improve home energy, peace, and financial growth.</p>
+<p><strong>Duration:</strong> 60 mins</p>
+</div>
+
+<div class="card">
+<h3>🔮 Tarot Reading</h3>
+<p>Quick insights and guidance for current life situations.</p>
+<p><strong>Duration:</strong> 30 mins</p>
+</div>
+
+<div class="card">
+<h3>📜 Vedic Astrology</h3>
+<p>Deep life analysis covering past, present, and future.</p>
+<p><strong>Duration:</strong> 60 mins</p>
+</div>
+</section>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal()">&times;</span>
+<h2 id="title"></h2>
+<p id="desc"></p>
+</div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" data-aos="fade-right">
+<h2>About Rajalakshmi</h2>
+
+<div class="about-container">
+
+  <!-- ENGLISH BOX -->
+  <div class="about-box">
+    <h3>English</h3>
+
+    <p>
+    I am Rajalakshmi, a 40-year-old astrologer with 10+ years of experience.
+    My journey in astrology began in childhood with deep curiosity about life and destiny.
+    </p>
+
+    <p>
+    I completed my Bachelor's in English Literature, which helps me explain astrology
+    in a simple and clear way.
+    </p>
+
+    <p>
+    I have guided <strong>2000+ clients</strong> in marriage, health, career, and life decisions.
+    My approach combines Vedic astrology, intuition, and practical solutions.
+    </p>
+
+    <p>
+    Even with only 5% vision in one eye, I stayed strong and committed to my purpose.
+    I believe astrology should guide, support, and bring peace—not fear.
+    </p>
+
+    <p><strong>Trusted. Honest. Confidential guidance.</strong></p>
+  </div>
+
+  <!-- TAMIL BOX -->
+  <div class="about-box">
+    <h3>தமிழ்</h3>
+
+    <p>
+    நான் ராஜலக்ஷ்மி, வயது 40. 10+ ஆண்டுகளாக ஜோதிடத்தில் அனுபவம் பெற்றவர்.
+    சிறுவயதிலிருந்தே ஜோதிடத்தில் ஆழ்ந்த ஆர்வம் கொண்டேன்.
+    </p>
+
+    <p>
+    நான் English Literature-ல் பட்டப்படிப்பு முடித்துள்ளேன்.
+    இதனால் ஜோதிடத்தை எளிமையாக விளக்க முடிகிறது.
+    </p>
+
+    <p>
+    நான் <strong>2000+ வாடிக்கையாளர்களுக்கு</strong> திருமணம், உடல்நலம் மற்றும் வாழ்க்கை
+    முடிவுகளில் வழிகாட்டி உள்ளேன்.
+    </p>
+
+    <p>
+    ஒரு கண்ணில் 5% பார்வை இருந்தாலும், நான் அதை பலமாக மாற்றிக் கொண்டேன்.
+    ஜோதிடம் மனிதர்களுக்கு வழிகாட்டும் ஒரு சக்தி என்று நான் நம்புகிறேன்.
+    </p>
+
+    <p><strong>நம்பிக்கையுடன் ஆலோசனை பெறலாம்.</strong></p>
+  </div>
+
+</div>
+
+</section>
+<br><br><br><br>
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <h2>⭐ Our Happy Clients</h2>
+
+  <div class="testimonial">
+    <h3>⭐⭐⭐⭐⭐ Krithika – Chennai</h3>
+    <p><strong>Service:</strong> Marriage Prediction & Compatibility</p>
+    <p>
+      I consulted for marriage timing and compatibility. The predictions were very accurate,
+      and I got clarity about my future. The guidance helped my family make the right decision.
+      Highly satisfied with the detailed explanation and support.
+    </p>
+  </div>
+
+  <div class="testimonial">
+    <h3>⭐⭐⭐⭐⭐ Brindha – Coimbatore</h3>
+    <p><strong>Service:</strong> Health Astrology</p>
+    <p>
+      I approached for health-related concerns. The analysis was very detailed and matched my
+      current situation. I received helpful remedies and lifestyle suggestions which improved
+      my well-being. Very trustworthy service.
+    </p>
+  </div>
+
+  <div class="testimonial">
+    <h3>⭐⭐⭐⭐⭐ Prema – Madurai</h3>
+    <p><strong>Service:</strong> Vaasthu Consultation</p>
+    <p>
+      My home had many issues before consultation. After following the Vaasthu corrections,
+      I could see positive changes in my life and peace at home. The explanation was simple
+      and practical.
+    </p>
+  </div>
+
+  <div class="testimonial">
+    <h3>⭐⭐⭐⭐⭐ Saranya – Salem</h3>
+    <p><strong>Service:</strong> Tarot Reading</p>
+    <p>
+      The tarot reading gave me clear guidance about my career and personal life.
+      Everything was explained in a very understandable way. I felt confident after the session.
+    </p>
+  </div>
+
+  <div class="testimonial">
+    <h3>⭐⭐⭐⭐⭐ Mahalakshmi – Erode</h3>
+    <p><strong>Service:</strong> Vedic Astrology</p>
+    <p>
+      The Vedic astrology consultation was very deep and accurate. I got insights about my
+      past, present, and future. The remedies suggested were easy to follow and effective.
+    </p>
+  </div>
+
+</section>
+
+<!-- CTA -->
+<section class="cta">
+<h2>Ready to Know Your Future?</h2>
+
+<p>Get clear answers about your life with trusted astrology guidance.</p>
+
+<a href="https://wa.me/919361098711" class="gold-btn">WhatsApp Now</a>
+<a href="tel:9361098711" class="gold-btn">Call Now</a>
+
+<p>✨ Trusted by 2000+ Clients</p>
+</section>
+<!-- BOOKING -->
+<section id="booking" class="booking">
+<h2>FREE Booking Consultation</h2>
+
+<p>Available Time: 10 AM – 5 PM</p>
+
+<form action="/book" method="POST">
+
+<input type="text" name="name" placeholder="Full Name" required>
+
+<input type="email" name="email" placeholder="Email ID" required>
+
+<input type="tel" name="phone" placeholder="Phone Number" required>
+
+<label>Select Date</label>
+<input type="date" name="visit_date" required>
+
+<label>Consultation Type</label>
+<select name="session_type" required>
+<option>Phone Call</option>
+<option>WhatsApp Call</option>
+<option>Direct Visit</option>
+</select>
+
+<label>Select Time</label>
+<select name="time" required>
+<option>10:00 AM</option>
+<option>11:00 AM</option>
+<option>12:00 PM</option>
+<option>1:00 PM</option>
+<option>2:00 PM</option>
+<option>3:00 PM</option>
+<option>4:00 PM</option>
+<option>5:00 PM</option>
+</select>
+
+<button class="gold-btn">Confirm Booking</button>
+
+</form>
+
+<p>BE POSITIVE BE HAPPY</p>
+
+
+</section>
+
+<!-- FLOAT WHATSAPP -->
+<a href="https://wa.me/919361098711?text=Hi%20I%20need%20consultation"
+class="whatsapp">💬</a>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+<script>
+AOS.init({ duration: 1000 });
+</script>
+<footer class="footer">
+
+<div class="footer-container">
+
+  <div class="footer-brand">
+    <h2>Rajalakshmi Astro Guru</h2>
+    <p>
+    Transforming lives through clear, practical astrology guidance.
+    Get trusted predictions and solutions for your life journey.
+    </p>
+  </div>
+
+
+  <div class="footer-contact">
+    <h3>Contact Info</h3>
+    <p>📞 +91 93610 98711</p>
+    <p>💬 WhatsApp Available</p>
+    <p>📧 rajalakshmiastro@gmail.com</p>
+  </div>
+
+</div>
+
+<p class="footer-bottom">
+© 2026 Rajalakshmi Astro Guru. All rights reserved.
+</p>
+
+</footer>
+</body>
+</html>
